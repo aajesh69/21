@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>21 Coffee House and Bar</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <nav class="navbar">
+      <a href="index.html">Home</a>
+      <a href="aboutus.html">About Us</a>
+      <a href="menu.html">Menu</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="services.html">Services</a>
+      <a href="location.html">Location</a>
+    </nav>
+  </header>
+
+  <main>
+
+  <!-- Hero Section -->
+  <div class="hero" id="home">
+    <div class="heading">
+      <h1 class="hero-title">
+        <span>21</span><br>
+        <span>Coffee</span><br>
+        <span>House</span>
+      </h1>
+    </div>
+  </div>
+
+  
+  <!-- Content Sections -->
+<section style="text-align: center;">
+  <h2 style="font-size: 2.5rem;">Welcome</h2>
+  <p style="font-size: 1.5rem;">Discover the taste of perfection...</p>
+  <button onclick="location.href='aboutus.html'" style="padding: 10px 20px; font-size: 1rem; margin-top: 20px; cursor: pointer; background-color: #dcd1cf; color: rgb(10, 0, 0); border: none; border-radius: 5px;">
+    Learn More...
+  </button>
+  
+  
+</section>
+
+<section style="display: flex; align-items: center; justify-content: center; padding: 60px 20px; gap: 40px;">
+  <!-- Image on the left -->
+  <img src="481061107_610260611815946_4045926592405786719_n.jpg" alt="Coffee Farming" style="width: 45%; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); margin-left: -25px;">
+
+  <!-- Text on the right -->
+  <div class="slide-in-right">
+    <p style="letter-spacing: 2px; font-size: 0.9rem; color: #888; text-transform: uppercase;">Coffee Farming</p>
+    <h2 style="font-size: 2.5rem; color: #333; font-weight: bold; margin: 10px 0;">The Journey from<br>Crop to Cup</h2>
+    <p style="font-size: 1rem; color: #666; line-height: 1.6;">
+      Grown in the ideal Himalayan air, our coffee beans are roasted to perfection and <br> sent off to all our outlets to deliver the best coffee experience.
+    </p>
+    <button style="margin-top: 20px; background-color: #c2a15f; color: white; padding: 12px 24px; font-size: 1rem; border: none; border-radius: 4px; cursor: pointer; font-weight: bold;">
+      Learn More →
+    </button>
+  </div>
+  
+</section>
+
+<section style="display: flex; align-items: center; justify-content: center; padding: 60px 20px; gap: 40px;">
+  <!-- Text on the left -->
+  <div class="slide-in-left">
+    <p style="letter-spacing: 2px; font-size: 0.9rem; color: #888; text-transform: uppercase;">Coffee Farming</p>
+    <h2 style="font-size: 2.5rem; color: #333; font-weight: bold; margin: 10px 0;">The Journey from<br>Crop to Cup</h2>
+    <p style="font-size: 1rem; color: #666; line-height: 1.6;">
+      Grown in the ideal Himalayan air, our coffee beans are roasted to perfection and <br> sent off to all our outlets to deliver the best coffee experience.
+    </p>
+    <button style="margin-top: 20px; background-color: #c2a15f; color: white; padding: 12px 24px; font-size: 1rem; border: none; border-radius: 4px; cursor: pointer; font-weight: bold;">
+      Learn More →
+    </button>
+  </div>
+
+  <!-- Image on the right -->
+  <img src="472202082_565252762991626_6918405861793729227_n.jpg" alt="Coffee Farming" style="width: 45%; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); margin-left: -25px;">
+</section>
+<section class="review-slider">
+</section>
+
+
+<div class="our-location">
+  Our Location
+</div>
+
+<div class="photo-row">
+  <div class="photo-item">
+    <img src="unnamed.jpg" alt="Detail 1">
+    <p>Kamalpokhari</p>
+  </div>
+  <div class="photo-item">
+    <img src="unnamedmhj.jpg" alt="Detail 2">
+    <p>Maharajgunj</p>
+  </div>
+<div class="photo-item">
+  <img src="472697754_576799678495373_1668892028544599262_n.jpg" alt="Detail 3">
+  <p>Baudha</p>
+</div>
+<div class="photo-item">
+  <img src="480887813_610260648482609_5589438935788618040_n.jpg" alt="Detail 4" style="height: 127px; width: auto;">
+  <p>Nagpokhari</p>
+</div>
+
+</div>
+
+  </main>
+
+  
+  <script src="script.js"></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const navLinks = document.querySelectorAll(".navbar a");
+      const currentPage = window.location.pathname.split("/").pop() || "index.html";
+
+      navLinks.forEach(link => {
+        const linkPage = link.getAttribute("href");
+        if (linkPage === currentPage) {
+          link.classList.add("active");
+        }
+      });
+    });
+  </script>
+
+<div class="sub-footer">
+  <div class="sub-footer-content">
+    <div>
+      <h4>Contact Us</h4>
+      <p>📞 +977 9800000000</p>
+      <p>✉️ contact@21coffeehouse.com</p><br>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/twentyonecoffeehouse/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/21coffeehousekamalpokhari/" target="_blank"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+
+    <div>
+      <h4>Visit Us</h4>
+      <p>📍 Nagpokhari, Kathmandu</p>
+      <p>📍 Kamalpokhari, Kathmandu</p>
+      <p>📍 Maharajgunj, Kathmandu</p>
+      <p>📍 Baudha, Kathmandu</p>
+    </div>
+  </div>
+</div>
+</div>
+ <!-- Footer -->
+ <footer>
+  <p>&copy; 2025 21 Coffee House and Bar. All Rights Reserved.</p>
+</footer>
+</body>
+</html>

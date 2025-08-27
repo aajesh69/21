@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Menu | 21 Coffee House</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    .menu-section {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .menu-category {
+      margin: 40px 0;
+    }
+
+    .menu-category h3 {
+      font-size: 2rem;
+      color: #c2a15f;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #eee;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    .menu-items {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .menu-item {
+      width: 200px;
+      background: #fff;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .menu-item:hover {
+      transform: translateY(-5px);
+    }
+
+    .menu-item img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .menu-item h4 {
+      margin: 10px 0 5px;
+      color: #333;
+    }
+
+    .menu-item p {
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    .menu-item .price {
+      color: #c2a15f;
+      font-weight: bold;
+      margin-top: 8px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="index.html">Home</a>
+      <a href="aboutus.html">About Us</a>
+      <a href="menu.html">Menu</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="services.html">Services</a>
+      <a href="location.html">Location</a>
+    </nav>
+  </header>
+
+  <main class="menu-section">
+    <h2>Our Menu</h2>
+    <p>Enjoy a variety of coffees, teas, and snacks crafted to perfection.</p>
+
+    <!-- Coffee Category -->
+    <div class="menu-category">
+      <h3>Coffee</h3>
+      <div class="menu-items">
+        <div class="menu-item">
+          <img src="images/espresso.jpg" alt="Espresso">
+          <h4>Espresso</h4>
+          <p>Strong and rich classic shot</p>
+          <div class="price">Rs. 180</div>
+        </div>
+        <div class="menu-item">
+          <img src="images/latte.jpg" alt="Latte">
+          <h4>Latte</h4>
+          <p>Smooth with steamed milk</p>
+          <div class="price">Rs. 220</div>
+        </div>
+        <div class="menu-item">
+          <img src="images/cappuccino.jpg" alt="Cappuccino">
+          <h4>Cappuccino</h4>
+          <p>Foamy and bold flavor</p>
+          <div class="price">Rs. 210</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Snacks Category -->
+    <div class="menu-category">
+      <h3>Snacks</h3>
+      <div class="menu-items">
+        <div class="menu-item">
+          <img src="images/croissant.jpg" alt="Croissant">
+          <h4>Butter Croissant</h4>
+          <p>Flaky and fresh baked</p>
+          <div class="price">Rs. 130</div>
+        </div>
+        <div class="menu-item">
+          <img src="images/muffin.jpg" alt="Muffin">
+          <h4>Chocolate Muffin</h4>
+          <p>Rich and moist</p>
+          <div class="price">Rs. 150</div>
+        </div>
+        <div class="menu-item">
+          <img src="images/sandwich.jpg" alt="Sandwich">
+          <h4>Club Sandwich</h4>
+          <p>Filled with fresh veggies & chicken</p>
+          <div class="price">Rs. 250</div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <div class="sub-footer">
+    <div class="sub-footer-content">
+      <div>
+        <h4>Contact Us</h4>
+        <p>📞 +977 9800000000</p>
+        <p>✉️ contact@21coffeehouse.com</p><br>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/twentyonecoffeehouse/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/21coffeehousekamalpokhari/" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+      <div>
+        <h4>Visit Us</h4>
+        <p>📍 Nagpokhari, Kathmandu</p>
+        <p>📍 Kamalpokhari, Kathmandu</p>
+        <p>📍 Maharajgunj, Kathmandu</p>
+        <p>📍 Baudha, Kathmandu</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 21 Coffee House and Bar. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const navLinks = document.querySelectorAll(".navbar a");
+      const currentPage = window.location.pathname.split("/").pop() || "index.html";
+
+      navLinks.forEach(link => {
+        const linkPage = link.getAttribute("href");
+        if (linkPage === currentPage) {
+          link.classList.add("active");
+        }
+      });
+    });
+  </script>
+</body>
+</html>

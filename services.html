@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Services | 21 Coffee House</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="index.html">Home</a>
+      <a href="aboutus.html">About Us</a>
+      <a href="menu.html">Menu</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="services.html">Services</a>
+      <a href="location.html">Location</a>
+    </nav>
+  </header>
+  <p>hello services</p>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const navLinks = document.querySelectorAll(".navbar a");
+      const currentPage = window.location.pathname.split("/").pop() || "index.html";
+
+      navLinks.forEach(link => {
+        const linkPage = link.getAttribute("href");
+        if (linkPage === currentPage) {
+          link.classList.add("active");
+        }
+      });
+    });
+  </script>
+<div class="sub-footer">
+  <div class="sub-footer-content">
+    <div>
+      <h4>Contact Us</h4>
+      <p>📞 +977 9800000000</p>
+      <p>✉️ contact@21coffeehouse.com</p><br>
+    </div>
+    <div class="social-icons">
+      <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+    <div>
+      <h4>Visit Us</h4>
+      <p>📍 Nagpokhari, Kathmandu</p>
+      <p>📍 Kamalpokhari, Kathmandu</p>
+      <p>📍 Maharajgunj, Kathmandu</p>
+      <p>📍 Baudha, Kathmandu</p>
+    </div>
+    
+  </div>
+</div>
+ <!-- Footer -->
+ <footer>
+  <p>&copy; 2025 21 Coffee House and Bar. All Rights Reserved.</p>
+</footer>
+  </body>
